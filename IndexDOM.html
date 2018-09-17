@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IndexDOM</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <style>
+    .col {
+        border: 2px solid greenyellow
+    }
+    </style>
+ 
+ <script>
+
+function eliminar(){
+    document.getElementById("lista").children[0].remove();
+}
+
+function agregarItem(){
+    var textoEntrada = document.getElementById("texto-entrada").value;
+            
+ //           console.log(typeof textoEntrada)
+ //           console.log("Se ejecutò la función uno")
+
+    var nodo = document.createElement("li");
+
+    var textoNodo = document.createTextNode(textoEntrada);
+
+            nodo.appendChild(textoNodo);
+
+        document.getElementById("lista").appendChild(nodo)
+}
+
+
+
+ </script>
+
+
+</head>
+<body>
+
+    <div>
+        <div>
+            <p id="prueba-lista">dé Click en el botón para eliminar un ítem.</p>
+        </div>
+        <div class="row">
+            <ol id="lista">
+              <li>a.</li>
+              <li>b.</li>
+              <li>c.</li>
+              <li>d.</li>
+              <li>e.</li>
+            </ul>
+        </div>
+        <div>
+            <button onclick="eliminar()">eliminar</button>
+    </div>
+
+    <div>
+        <div>
+            <p id="prueba-lista">dé Click en el botón para adicionar un ítem.</p>
+        </div>
+        <div class="row-100">
+            <div class="col-100">
+                <input type="text" id="texto-entrada">
+            </div>
+            <div class="col-2">
+                <button onclick="agregarItem()">Adicionar</button>
+            </div>
+        </div>
+    </div>
+        
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+h1 {
+    color: blue;
+    letter-spacing: 20px;
+    background-color: aquamarine;
+    text-align: center;
+    border: 1px solid black;
+
+    /* border: 1px solid blank;*/
+}
+p {
+color: blue;
+
+}
+
+li {text-decoration: underline;
+}
+h2 {
+    text-align: center; 
+
+}
+
+ h3 {
+     color: brown;
+     letter-spacing: 10 px;
+ }
+ 
+ #contenedor-uno {
+     margin-bottom: 10px;
+ }
+ 
+ .contenedor {
+     border: 1px solid #bd1a10;
+ }
+
+ h4{
+    letter-spacing: 10px;
+    text-align: center; 
+
+ }
+
+ 

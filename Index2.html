@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <style>
+    .col {
+        border: 2px solid greenyellow
+    }
+    </style>
+ 
+ <script>
+
+//ARREGLOS     
+//   var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+ //Function
+
+//    for(k in dias) {
+//        console.log(dias[k])
+//    }
+//    dias.forEach(function(dia) {
+//        console.log(dia);
+//    })
+//    dias.forEach(dia => console.log(dia))
+/*
+//var mes = ["feb", "jun"];
+var años = [2014, 2018];
+var nombres = ["MaJo", "MaPis"];
+var mis_hijas = [nombres, años, "mona - pelinegra", true, false];
+
+for (k in años) {
+   console.log(años[k]+ " - " + nombres[k]);
+   console.log("");
+
+}
+
+    if(nombres[1]=="Ja")
+        console.log("Mi bb mayor");
+      
+    else (console.log("Es la chiquis"));    
+    
+
+    for (k in mis_hijas) {
+    console.log(mis_hijas[k]);
+}
+*/
+//OBJETOS
+
+var persona = {Nombre:"Javier", Apellido:"Pacheco"};
+var datos ={dir:"Cuni", piso:2};
+persona.datos = datos;
+var hijas = ["MaJo", "MaPis"];
+persona.hijas = hijas;
+
+console.log(persona);
+
+var funcionuno = function(){
+    console.log("Se ejecutó la función uno")
+    var nodo = docum var document: Document);
+    var textNodo = document.creatextNode("elemento de una lista");
+
+    nodo.appendchild(textoNodo);
+    document.getElementById("prueba-lista").appendChild(nodo)
+}
+
+
+
+ </script>
+
+
+</head>
+<body>
+    <div class="row">
+        <div class="col s1">1</div>
+        <div class="col s1">2</div>
+        <div class="col s1">3</div>
+        <div class="col s1">4</div>
+        <div class="col s1">5</div>
+        <div class="col s1">6</div>
+        <div class="col s1">7</div>
+        <div class="col s1">8</div>
+        <div class="col s1">9</div>
+        <div class="col s1">10</div>
+        <div class="col s1">11</div>
+        <div class="col s1">12</div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">This div is 12-columns wide on all screen sizes</div>
+        <div class="col s6">6-columns (one-half)</div>
+        <div class="col s6">6-columns (one-half)</div>
+      </div>
+
+      <div class="row">
+        <div class="col s12"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
+        <div class="col s6 offset-s6"><span class="flow-text">6-columns (offset-by-6)</span></div>
+      </div>
+
+    <div>
+        <p id="prueba-lista">dé Click en el botón para cambiar la lista.</p>
+    </div>
+    
+
+      <div class="row">
+        <ul id="prueba-lista">
+          <li>1.</li>
+          <li>2.</li>
+          <li>3.</li>
+          <li>4.</li>
+          <li>5.</li>
+        </ul>
+      </div>
+
+       
+    <div>
+        <button onclick="borrar()">click aquí</button>
+    </div>
+
+
+</body>
+</html>
